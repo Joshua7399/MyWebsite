@@ -18,7 +18,7 @@ p {
     color: #BFA181;
 }
 
-/* Styling the header links */
+/* Styling the links */
 header a {
     float: left;
     color: turquoise;
@@ -31,7 +31,7 @@ header a {
 }
 
 /* Styling the links on hover */
-header a:hover {
+header a:hover, footer a:hover {
     background-color: #ddd;
     color: black
 }
@@ -49,8 +49,31 @@ h1 {
     font-weight: bold;
 }
 
+footer h3 {
+    text-align: right;
+    font-style: italic;
+    font-size: 10pt;
+    color: turquoise;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid #BFA181;
+    padding: 20px 10px;
+}
+
+footer a {
+    color: turquoise;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 5px;
+    border-radius: 4px;
+}
+
 /* Floating the link section to the right*/
-.header-right {
+nav.header-right {
     float: right;
 }
 
