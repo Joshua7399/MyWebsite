@@ -20,29 +20,133 @@
     </header>
 
     <main>
-        <article>
-            <section>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatum repudiandae rerum id
-                    est
-                    possimus
-                    delectus dignissimos ratione animi omnis eligendi non ea numquam, alias earum quidem praesentium
-                    ipsum
-                    reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias architecto consectetur
-                    sequi, soluta eveniet nam velit consequatur minus suscipit veniam quaerat dicta neque voluptas enim
-                    inventore, corrupti exercitationem, aliquam quo!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit consequuntur laboriosam
-                    distinctio eaque ab explicabo, libero voluptate sint velit asperiores provident. Numquam ducimus
-                    aspernatur reiciendis rerum atque doloremque maiores, repellendus sit itaque, iure maxime corrupti
-                    dignissimos possimus. Cum quo excepturi ipsa architecto non, corporis in at! Ipsa et excepturi quo
-                    quos, earum ducimus illo magnam ex sequi nostrum ut accusantium odit neque veritatis, saepe adipisci
-                    deserunt inventore voluptas sed ad. Ea necessitatibus sapiente cumque magnam nulla dignissimos nisi
-                    at, enim cupiditate officiis, inventore, doloribus quod explicabo esse perspiciatis fuga
-                    voluptatibus consequatur error assumenda adipisci. Inventore eum necessitatibus omnis aliquam.
+        <section>
+            <!-- Inserting search bar -->
+            <input type="text" id="searchInput" placeholder="Search for courses...">
 
-                </p>
-            </section>
-        </article>
+            <!-- Inserting course filter by level -->
+            <select id="levelFilter">
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+            </select>
+
+            <!-- Filter that sorts by level from lowest to highest and vice versa -->
+            <button onclick="sortCourses('asc')">Sort by level (Low to High)</button>
+            <button onclick="sortCourses('desc')">Sort by level (High to Low)</button>
+
+            <div id="coursesList">
+                <div class="course">
+                    <img src="Images/Success.jpg" alt="Path to success">
+                    <div class="course-details">
+                        <h2>Achieving Success in Changing Environments</h2>
+                        <p>Level: 1</p>
+                        <p>Code: CST8300</p>
+                        <p>Description: Finding employment success using skills taught in the course.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/Essentials.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Computer Essentials</h2>
+                        <p>Level: 1</p>
+                        <p>Code: CST8118</p>
+                        <p>Description: Learning basic computer knowledge & fundamentals.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/Java1.png" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Intro to Computer Programming</h2>
+                        <p>Level: 1</p>
+                        <p>Code: CST8116</p>
+                        <p>Description: Introductory course to Java programming.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/Database1.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Intro to Database</h2>
+                        <p>Level: 1</p>
+                        <p>Code: CST8215</p>
+                        <p>Description: Introductory course to database systems</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/Math.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Tech Math for Computer Science</h2>
+                        <p>Level: 1</p>
+                        <p>Code: MAT8001C</p>
+                        <p>Description: Math course related to Computer Programming applicable calculations.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/coop.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Co-op Readiness</h2>
+                        <p>Level: 2</p>
+                        <p>Code: GEP1001</p>
+                        <p>Description: Preparation course for co-op job placements</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/Database2.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Database Systems</h2>
+                        <p>Level: 2</p>
+                        <p>Code: CST2355</p>
+                        <p>Description: Continued expansion of database system applications</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/English.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>English</h2>
+                        <p>Level: 2</p>
+                        <p>Code: ENL2019T</p>
+                        <p>Description: Building research project and strengthening teamwork skills.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/Astronomy.jpeg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Intro to Astronomy</h2>
+                        <p>Level: 2</p>
+                        <p>Code: AST2000</p>
+                        <p>Description: Introductory course to Astronomy.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/Java2.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>OOP in Java</h2>
+                        <p>Level: 2</p>
+                        <p>Code: CST8284</p>
+                        <p>Description: Level 2 course for Java programming. A focus on object-oriented programming.
+                        </p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/OS.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Operating Systems</h2>
+                        <p>Level: 2</p>
+                        <p>Code: CST8102</p>
+                        <p>Description: Origin of Linux. Learning and using commands through Ubuntu.</p>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="Images/WP.jpg" alt="Course 2">
+                    <div class="course-details">
+                        <h2>Web Programming</h2>
+                        <p>Level: 2</p>
+                        <p>Code: CST8285</p>
+                        <p>Description: Introductory course to Web Programming. Discussing and applying HTML, CSS,
+                            Javascript & PHP basics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -52,7 +156,7 @@
         </nav>
 
     </footer>
-    
+
 </body>
 
 </html>

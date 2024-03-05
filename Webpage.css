@@ -14,11 +14,128 @@ header {
 }
 
 /* Styling body text */
-p {
+p, li {
     color: #BFA181;
 }
 
-/* Styling the links */
+.center-paragraph {
+    text-align: center;
+}
+
+/* Styling unordered lists */
+ul {
+    padding-left: 0px;
+    
+}
+
+/* Centering text for skills */
+#skills {
+    text-align: center;
+}
+
+/* Styling Education Section */
+.education {
+    text-align: center;
+}
+
+.diploma {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Styling list items */
+li {
+    display: block;
+    padding: 0;
+}
+
+/* bolding certain text to emphasize */
+.bold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+/* Styling links inside paragraphs */
+a {
+    color: turquoise;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.lab-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.lab {
+    text-align: center;
+}
+
+.lab:last-child {
+    margin-right: 0;
+}
+
+/* Styling the courses page */
+
+#coursesList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: 300px; /* Adjust width as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #BFA181;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-details {
+    padding: 10px;
+}
+
+.course-details h2 {
+    margin-top: 0;
+}
+
+.course-details p {
+    margin: 5px 0;
+}
+
+/* Styling Images on homepage, Resume */
+#myImage {
+max-width: 25%;
+max-height: 25%;
+}
+
+.image-homepage {
+    display: flex;
+    justify-content: center;
+}
+
+.image-homepage img, .diploma img, .lab img {
+    margin: 0 10px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-homepage img:hover, .dilpoma img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling the links in header */
 header a {
     float: left;
     color: turquoise;
@@ -31,7 +148,7 @@ header a {
 }
 
 /* Styling the links on hover */
-header a:hover, footer a:hover {
+header a:hover, footer a:hover, a:hover {
     background-color: #ddd;
     color: black
 }
@@ -46,6 +163,18 @@ h1 {
     display: inline;
     color: turquoise;
     font-size: 25px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #BFA181;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    color: #BFA181;
+    text-align: center;
     font-weight: bold;
 }
 
